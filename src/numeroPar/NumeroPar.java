@@ -1,19 +1,16 @@
 package numeroPar;
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class NumeroPar {
 	
 	public static void main(String[] args) {
 		
-		int num;
-		Scanner numero = new Scanner(System.in);	
-		System.out.println("Ingrese un numero entero:");
-		num = numero.nextInt();
+		int num = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero entero"));
 		
 		if (num % 2 == 0) {
-			System.out.println("El numero es par");
+			JOptionPane.showMessageDialog(null, "El numero es par");
 		} else {
-			System.out.println("El numero es impar");
+			JOptionPane.showMessageDialog(null, "El numero es impar");
 		}
 		
 	}
